@@ -1,5 +1,5 @@
 import turtle
-import  winsound
+# import  winsound
 
 wn = turtle.Screen()
 
@@ -105,12 +105,12 @@ while running:
     if Ball.ycor() > 290:
         Ball.sety(290)
         Ball.dy *= -1
-        winsound.PlaySound("laser.wav", winsound.SND_ASYNC)
+        # winsound.PlaySound("laser.wav", winsound.SND_ASYNC)
 
     if Ball.ycor() < -290:
         Ball.sety(-290)
         Ball.dy *= -1
-        winsound.PlaySound("laser.wav", winsound.SND_ASYNC)
+        # winsound.PlaySound("laser.wav", winsound.SND_ASYNC)
 
     if Ball.xcor() > 390:
         Ball.goto(0, 0)
@@ -131,9 +131,9 @@ while running:
     if (Ball.xcor() > 340 and Ball.xcor() < 350) and (Ball.ycor() < paddleB.ycor() + 40 and Ball.ycor() > paddleB.ycor() - 40):
         Ball.setx(340)
         Ball.dx *= -1
-        winsound.PlaySound("laser.wav", winsound.SND_ASYNC)
+        # winsound.PlaySound("laser.wav", winsound.SND_ASYNC)
 
     if (Ball.xcor() < -340 and Ball.xcor() > -350) and (Ball.ycor() < paddleA.ycor() + 40 and Ball.ycor() > paddleA.ycor() - 40):
         Ball.setx(-340)
         Ball.dx *= -1
-        winsound.PlaySound("laser.wav", winsound.SND_ASYNC)
+        # winsound.PlaySound("laser.wav", winsound.SND_ASYNC)
